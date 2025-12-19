@@ -2,23 +2,83 @@
 <html>
 <head>
 <title>Digital Siren</title>
-</head>
-<body style="background-color: pink; color: white;">
 
+<!-- **ADDED: Internal CSS for transitions & polish** -->
+<style>
+    html {
+        scroll-behavior: smooth; /* **ADDED: Smooth scrolling** */
+    }
+
+    body {
+        background-color: pink;
+        color: white;
+        font-family: Arial, sans-serif; /* **ADDED: Cleaner font** */
+        text-align: center;
+        animation: fadeIn 1.5s ease-in; /* **ADDED: Page fade-in** */
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+        font-weight: bold;
+        transition: color 0.3s ease, transform 0.3s ease; /* **ADDED: Hover transition** */
+    }
+
+    a:hover {
+        color: hotpink; /* **ADDED: Hover color** */
+        transform: scale(1.1); /* **ADDED: Slight zoom on hover** */
+    }
+
+    h1 {
+        transition: letter-spacing 0.3s ease; /* **ADDED** */
+    }
+
+    h1:hover {
+        letter-spacing: 2px; /* **ADDED: Subtle hover effect** */
+    }
+
+    /* **ADDED: Fade-in animation keyframes** */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+</head>
+
+<body>
 <center>
 <h1>Digital Portfolio</h1>
-<p>Welcome! I’m Zion, a digital marketer at the start of my career. I created this portfolio to share my early projects and show how I approach creativity, problem-solving, and building my skills in the digital space.</p>
 
-<Center>
+<p>
+Welcome! I'm Zion, a digital marketer at the start of my career. 
+I created this portfolio to share my early projects and show how I approach creativity, 
+problem-solving, and building my skills in the digital space.
+</p>
+
 <p>If you want to move forward, effort is the key that opens the door.</p>
-<p> Feedback|<a href="https://collegeofwestchester-my.sharepoint.com/:w:/g/personal/zt359346_students_cw_edu/EWGn0WKQb8BHqlOIz9tXeSEBvD_ZoaKFk6vJ4MxHRoGmTQ?e=6lKcig">Resume</a>|<a href="https://bio.site/ZionT">Social Media</a>|<a href="https://collegeofwestchester-my.sharepoint.com/:p:/g/personal/zt359346_students_cw_edu/ETpCvp-Fd_ZAm9bexKPA1BkB89scE_b23e2HJoWamHcrOQ?e=987LrJ">Projects</a> 
 
+<!-- **ADDED: Hover effects automatically apply to links** -->
+<p>
+<a href="https://www.canva.com/design/DAG75I5t7Pg/YTUzTieSqfrpZx2UePgEDw/edit">
+Feedback</a> |
 
-<P>
-copyright &copy; All Rights Reserved 2025
-</P>
+<a href="https://collegeofwestchester-my.sharepoint.com">
+Resume</a> |
 
-</Center>
+<a href="https://bio.site/ZionT">
+Social Media</a> |
+
+<a href="https://collegeofwestchester-my.sharepoint.com">
+Projects</a>
+</p>
+
 </center>
 </body>
 </html>
